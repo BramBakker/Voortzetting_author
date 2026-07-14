@@ -1,48 +1,72 @@
-# Project Template (GitHub Pages)
+# Hennen van Merchtenen and the voortzetting
 
-A tiny static website for a course project. No build step, no server, nothing to
-keep paying for. It is just a few files that GitHub Pages serves as a web page,
-which is why it will still work years from now.
+A static site presenting three independent lines of computational evidence
+for shared authorship between Hennen van Merchtenen's known work and the
+disputed continuation of the Brabantsche Yeesten (ch. 6-7).
 
-## What's here
+## Viewing it locally
 
-- `index.html` - the page itself. Edit the text here.
-- `style.css` - the look. Change one color near the top to re-skin it.
-- `figure.png` - your main figure. Replace this file with your own.
-- `data.csv` - your data, in an open and machine-readable format.
-- `LICENSE` - the terms others may reuse your work under (CC BY 4.0).
-- `.nojekyll` - tells GitHub to serve the files exactly as they are.
+Browsers block `fetch()` on files opened directly (`file://`), and this
+site loads its data as JSON, so start a local server from this folder
+rather than double-clicking `index.html`:
 
-## Put it online with GitHub Pages
+```
+python3 -m http.server 8000
+```
 
-1. Make a free account at github.com.
-2. Make a new **public** repository. Any name works. For a personal site the
-   simplest name is `YOUR-USERNAME.github.io`.
-3. Add these files to it. The no-terminal way: on the repository page choose
-   **Add file -> Upload files**, drag everything in, and **Commit**. The git way:
-   `git clone` the repository, copy the files in, then `git add .`,
-   `git commit -m "first version"`, `git push`.
-4. In the repository open **Settings -> Pages**. Under **Build and deployment**
-   set **Source** to **Deploy from a branch**, choose the **main** branch and the
-   **/ (root)** folder, and click **Save**.
-5. Wait a minute, then visit `https://YOUR-USERNAME.github.io/REPO-NAME/`.
+then open `http://localhost:8000/`. Any static server works the same way
+(the VS Code "Live Server" extension, `npx serve`, etc.).
 
-Every time you push a change, the live site updates on its own.
+## Structure
 
-## Make it yours
+```
+index.html        the page itself (three tabs: n-grams, rhymes, embeddings)
+style.css         all styling, including the blurred manuscript backdrop
+script.js         tab switching + rendering for all three tabs
+data/*.json       the actual results the page displays (currently SAMPLE DATA)
+assets/           the manuscript photo used as the header backdrop
+```
 
-- Edit the title, your name, the abstract, and the table in `index.html`.
-- Drop in your own `figure.png` and `data.csv`.
-- Rewrite this README to say what your project is and how to rebuild it.
-- Change the accent color at the top of `style.css`.
+## Replacing the sample data
 
-## Going further
+Everything under `data/` is currently placeholder content so the page has
+something real to click through -- it is clearly marked `SAMPLE DATA` in
+both a visible banner and each JSON file's own `note` field. To plug in
+real results:
 
-This page is fully static: the data are typed straight into the HTML. The next
-step, if you want a table that updates whenever you edit a data file, is to load
-`data.csv` or a `data.json` with a few lines of JavaScript. That keeps the data
-separate from the page and still needs no server.
+1. Run your analysis pipeline (in order, from the folder containing your
+   corpus):
+   - `extract_xml_to_csv.py` -- once, to turn the TEI XML into CSVs with
+     author metadata.
+   - `impostors_verification.py` -- General Impostors verification with
+     leave-one-out validation.
+   - `contrastive_line_embeddings.py` -- trains the contrastive line
+     encoder and saves `line_embeddings.npy` (needed for the embeddings
+     tab; skip this if you only want the first two tabs working).
+2. Run `export_for_website.py` (edit `KNOWN_MATCH`, `QUESTIONED_MATCH`,
+   `KNOWN_LABEL`, `QUESTIONED_LABEL`, and `OUTPUT_DIR` at the top first).
+   It reads the pipeline's output and writes fresh `ngrams.json`,
+   `rhymes.json`, `null_calibration.json`, and `embeddings.json`.
+3. Copy those four files into this site's `data/` folder, overwriting the
+   sample ones (or point `OUTPUT_DIR` at this folder directly). Reload the
+   page -- the sample-data banner disappears on its own once none of the
+   loaded files carry a `SAMPLE DATA` note.
+
+The exact JSON schema each file expects is documented in the comment block
+at the top of `script.js`.
+
+## Editing the page itself
+
+- Title, subtitle, byline, abstract, and the "How it was made" paragraph
+  are plain text in `index.html` -- edit directly.
+- The one accent color lives in `style.css` as `--accent`; a second accent
+  (`--accent2`, used to tell the two documents apart in the embedding plot)
+  sits right next to it.
+- To use a different manuscript photo for the header backdrop, replace
+  `assets/manuscript-bg.jpg` and keep the filename, or update the path in
+  the `.hero::before` rule in `style.css`.
 
 ## License
 
-Text, images, and data: CC BY 4.0 (reuse with credit). See `LICENSE`.
+Text, images, and data: CC BY 4.0. Reuse freely with credit.
+Source template: https://github.com/christiancasey/measuring-manuscripts-project-template

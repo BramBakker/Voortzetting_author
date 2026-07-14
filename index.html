@@ -12,16 +12,30 @@
 </head>
 
 <body>
+
+<!-- Dismissible banner: shows only while the /data files are the bundled
+     sample data. Once you regenerate the JSON with export_for_website.py
+     using your real results, set IS_SAMPLE_DATA to false at the top of
+     script.js and this banner stops appearing. -->
+<div class="sample-banner" id="sampleBanner" role="status">
+  <span>Sample data shown below &mdash; for layout preview only. Replace the files in <code>/data</code> with real output once your pipeline has run.</span>
+  <button id="dismissBanner" aria-label="Dismiss this notice">&times;</button>
+</div>
+
 <main>
 
-  <!-- ===== HEADER: edit the title, the one-line description, and your name ===== -->
-  <header>
-    <h1>Hennen van Merchtenen and the voortzetting</h1>
-    <p class="subtitle">I am looking at similarities and differences.</p>
-    <p class="byline">Bram Bakker &middot; <span id="year"></span></p>
-  </header>
+  <!-- ===== HERO / HEADER: edit the title, the one-line description, and your name.
+       The soft backdrop image is assets/manuscript-bg.jpg -- swap it for any
+       photograph of the manuscript you like; it's blurred with CSS, not pre-blurred. ===== -->
+  <div class="hero">
+    <header>
+      <h1>Hennen van Merchtenen and the voortzetting</h1>
+      <p class="subtitle">Three lines of computational evidence toward a shared author between Hennen van Merchtenen's known work and the disputed continuation of the Brabantsche Yeesten.</p>
+      <p class="byline">Bram Bakker &middot; <span id="year"></span></p>
+    </header>
+  </div>
 
-  <!-- ===== ABSTRACT: a short paragraph for someone who has never seen this ===== -->
+  <!-- ===== ABSTRACT ===== -->
   <section>
     <h2>Abstract</h2>
     <p>
@@ -29,37 +43,73 @@
     </p>
   </section>
 
-  <!-- ===== FIGURE: replace figure.png with your own image ===== -->
-  <section>
-    <h2>Result</h2>
-    <figure>
-      <img src="figure.png" alt="Describe your figure here, for screen readers and search">
-      <figcaption>Figure 1. One sentence saying what the figure shows.</figcaption>
-    </figure>
+  <!-- ===== EVIDENCE TABS ===== -->
+  <nav class="tabs" role="tablist" aria-label="Type of evidence">
+    <button class="tab" role="tab" id="tab-ngrams" aria-controls="panel-ngrams" aria-selected="true" tabindex="0" data-tab="ngrams">
+      Bigram &amp; trigram frequency
+    </button>
+    <button class="tab" role="tab" id="tab-rhymes" aria-controls="panel-rhymes" aria-selected="false" tabindex="-1" data-tab="rhymes">
+      Rhyme similarity
+    </button>
+    <button class="tab" role="tab" id="tab-embeddings" aria-controls="panel-embeddings" aria-selected="false" tabindex="-1" data-tab="embeddings">
+      Contrastive embeddings
+    </button>
+  </nav>
+
+  <!-- ----- TAB 1: bigram / trigram frequency ----- -->
+  <section class="tab-panel" id="panel-ngrams" role="tabpanel" aria-labelledby="tab-ngrams" tabindex="0">
+    <p class="tab-intro">
+      Shared bigrams and trigrams between the known text and the questioned chapters, ranked by their
+      contribution to the two documents' TF&#8209;IDF similarity. Click any term &mdash; on either side &mdash;
+      to see how each document actually uses it.
+    </p>
+    <div class="compare-grid" id="ngrams-grid" aria-live="polite"></div>
+    <div class="context-panel" id="ngrams-context">
+      <p class="context-placeholder">Click a shared term above to compare its use in both texts.</p>
+    </div>
   </section>
 
-  <!-- ===== DATA: edit the rows, or replace the whole table ===== -->
-  <section>
-    <h2>The numbers</h2>
-    <p>The full data is in <a href="data.csv">data.csv</a>.</p>
-    <table>
-      <thead>
-        <tr><th>Item</th><th>Measure</th><th>Value</th></tr>
-      </thead>
-      <tbody>
-        <tr><td>Example A</td><td>count</td><td>42</td></tr>
-        <tr><td>Example B</td><td>count</td><td>17</td></tr>
-        <tr><td>Example C</td><td>count</td><td>8</td></tr>
-      </tbody>
-    </table>
+  <!-- ----- TAB 2: rhyme similarity ----- -->
+  <section class="tab-panel" id="panel-rhymes" role="tabpanel" aria-labelledby="tab-rhymes" tabindex="0" hidden>
+    <p class="tab-intro">
+      Shared rhyme words &mdash; the single most copy-resistant signal in Middle Dutch verse, since
+      scribes rewrite a line's wording far more freely than its rhyme pair. Click any word to see the
+      lines it closes in both texts.
+    </p>
+    <div class="compare-grid" id="rhymes-grid" aria-live="polite"></div>
+    <div class="context-panel" id="rhymes-context">
+      <p class="context-placeholder">Click a shared rhyme word above to compare its use in both texts.</p>
+    </div>
+
+    <h3>Impostors method: null calibration</h3>
+    <p class="tab-intro" id="calibration-caption"></p>
+    <div id="calibration-chart"></div>
+  </section>
+
+  <!-- ----- TAB 3: contrastive embeddings ----- -->
+  <section class="tab-panel" id="panel-embeddings" role="tabpanel" aria-labelledby="tab-embeddings" tabindex="0" hidden>
+    <p class="tab-intro">
+      Each point is one line of verse, placed by a 2D projection of its learned style embedding.
+      Lines that sit close together were judged similar in phrasing and rhythm by the model. Click a
+      point to read the line in context.
+    </p>
+    <div class="embedding-layout">
+      <div id="embedding-plot"></div>
+      <div class="context-panel" id="embedding-context">
+        <p class="context-placeholder">Click a point in the plot to see its line and surrounding context.</p>
+      </div>
+    </div>
   </section>
 
   <!-- ===== METHOD: enough that a stranger could rebuild the result ===== -->
   <section>
     <h2>How it was made</h2>
     <p>
-      One short paragraph. Where the data came from, what produced the figure, and
-      how someone could rebuild it. The full detail lives in the
+      Three independent methods were run over a corpus of 265 Middle Dutch rhymed manuscripts:
+      TF&#8209;IDF bigram/trigram similarity, a rhyme-word&#8209;based General Impostors verification
+      with leave-one-out validation against known multi-manuscript authors, and a contrastive
+      character-level line encoder trained across the corpus with author identity as the training
+      signal. The full pipeline and how to regenerate the data behind these tabs is documented in the
       <a href="README.md">README</a>.
     </p>
   </section>
@@ -74,9 +124,10 @@
 
 </main>
 
-<!-- A tiny script that fills in the current year next to your name. Optional. -->
+<!-- Fills in the current year next to your name. -->
 <script>
   document.getElementById("year").textContent = new Date().getFullYear();
 </script>
+<script src="script.js"></script>
 </body>
 </html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- EDIT: the title shows in the browser tab and in search results -->
+  <title>Hennen van Merchtenen and the voortzetting</title>
+
+  <!-- This loads the styling. You usually don't need to touch it. -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<main>
+
+  <!-- ===== HEADER: edit the title, the one-line description, and your name ===== -->
+  <header>
+    <h1>Hennen van Merchtenen and the voortzetting</h1>
+    <p class="subtitle">I am looking at similarities and differences.</p>
+    <p class="byline">Bram Bakker &middot; <span id="year"></span></p>
+  </header>
+
+  <!-- ===== ABSTRACT: a short paragraph for someone who has never seen this ===== -->
+  <section>
+    <h2>Abstract</h2>
+    <p>
+      I try to measure if the authorship is correct.
+    </p>
+  </section>
+
+  <!-- ===== FIGURE: replace figure.png with your own image ===== -->
+  <section>
+    <h2>Result</h2>
+    <figure>
+      <img src="figure.png" alt="Describe your figure here, for screen readers and search">
+      <figcaption>Figure 1. One sentence saying what the figure shows.</figcaption>
+    </figure>
+  </section>
+
+  <!-- ===== DATA: edit the rows, or replace the whole table ===== -->
+  <section>
+    <h2>The numbers</h2>
+    <p>The full data is in <a href="data.csv">data.csv</a>.</p>
+    <table>
+      <thead>
+        <tr><th>Item</th><th>Measure</th><th>Value</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Example A</td><td>count</td><td>42</td></tr>
+        <tr><td>Example B</td><td>count</td><td>17</td></tr>
+        <tr><td>Example C</td><td>count</td><td>8</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- ===== METHOD: enough that a stranger could rebuild the result ===== -->
+  <section>
+    <h2>How it was made</h2>
+    <p>
+      One short paragraph. Where the data came from, what produced the figure, and
+      how someone could rebuild it. The full detail lives in the
+      <a href="README.md">README</a>.
+    </p>
+  </section>
+
+  <!-- ===== FOOTER: license and a link back to the source ===== -->
+  <footer>
+    <p>
+      Text, images, and data: CC BY 4.0. Reuse freely with credit.
+      Source: <a href="https://github.com/christiancasey/measuring-manuscripts-project-template">this repository</a>.
+    </p>
+  </footer>
+
+</main>
+
+<!-- A tiny script that fills in the current year next to your name. Optional. -->
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
