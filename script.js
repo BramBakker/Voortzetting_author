@@ -75,8 +75,6 @@
     return note.toUpperCase().indexOf("SAMPLE DATA") !== -1;
   }
 
-  var MARKER_COLORS = ["#d62728", "#1f77b4", "#2ca02c", "#9467bd", "#ff7f0e", "#8c564b"];
-
   // ---- tabs -------------------------------------------------------------
 
   function initTabs() {
@@ -213,9 +211,14 @@
     if (items.length) selectTerm(items[0].term); // preselect the top-scoring term
   }
 
-  // ---- calibration strip plot (background similarity, shared by ngrams & rhymes tabs) --
+  // ---- calibration histogram (background similarity, shared by ngrams & rhymes tabs) --
+  //
+  // Displays the same histogram data/*_similarity_distribution.png produced by
+  // export_for_website.py (and, standalone, by rhyme_similarity.py / ngram_similarity.py) --
+  // a real histogram of the known text's similarity to every other document in
+  // the corpus, with only the actual questioned-document comparisons marked.
 
-  function renderCalibration(data, chartId, captionId, methodLabel) {
+  function renderCalibration(data, captionId, methodLabel) {
     var caption = document.getElementById(captionId);
     var parts = data.comparisons.map(function (c) {
       return "\u201C" + c.questioned_label + "\u201D sits at the " + c.percentile + "th percentile (score " +
@@ -223,59 +226,14 @@
     });
     caption.textContent =
       "Background: how similar \u201C" + data.known_label + "\u201D looks to each of the other " +
-      data.background.length + " documents in the corpus, by " + methodLabel + " (grey dots). Against that " +
+      data.background.length + " documents in the corpus, by " + methodLabel + ". Against that " +
       "background, " + parts.join("; and ") + ".";
+  }
 
-    var w = 640, h = 130, pad = 40;
-    function scaleX(v) { return pad + v * (w - 2 * pad); }
-
-    var allScores = data.background.map(function (b) { return b.score; })
-      .concat(data.comparisons.map(function (c) { return c.score; }));
-    var lo = Math.min(0, Math.min.apply(null, allScores));
-    var hi = Math.max(1, Math.max.apply(null, allScores));
-    function norm(v) { return (v - lo) / ((hi - lo) || 1); }
-
-    var dots = data.background.map(function (b, i) {
-      var jitter = ((i % 5) - 2) * 9;
-      var cy = h / 2 + jitter;
-      return (
-        '<circle class="calibration-dot" cx="' + scaleX(norm(b.score)).toFixed(1) + '" cy="' + cy + '" r="4">' +
-        "<title>" + escapeHtml(b.document) + ": " + b.score.toFixed(3) + "</title>" +
-        "</circle>"
-      );
-    }).join("");
-
-    var ticks = [0, 0.25, 0.5, 0.75, 1].map(function (t) {
-      var v = lo + t * (hi - lo);
-      return (
-        '<line class="calibration-axis" x1="' + scaleX(t) + '" x2="' + scaleX(t) + '" y1="' + (h - 24) + '" y2="' + (h - 18) + '"></line>' +
-        '<text class="calibration-label" x="' + scaleX(t) + '" y="' + (h - 4) + '" text-anchor="middle">' + v.toFixed(2) + "</text>"
-      );
-    }).join("");
-
-    var markers = data.comparisons.map(function (c, i) {
-      var color = MARKER_COLORS[i % MARKER_COLORS.length];
-      var x = scaleX(norm(c.score)).toFixed(1);
-      return (
-        '<line class="calibration-marker-line" x1="' + x + '" x2="' + x + '" y1="14" y2="' + (h - 24) +
-        '" stroke="' + color + '" stroke-dasharray="3,3"></line>' +
-        '<circle class="calibration-marker" cx="' + x + '" cy="' + (h / 2) + '" r="6" fill="' + color + '">' +
-        "<title>" + escapeHtml(c.questioned_label) + ": " + c.score.toFixed(3) + "</title>" +
-        "</circle>"
-      );
-    }).join("");
-
-    var legend = data.comparisons.map(function (c, i) {
-      var color = MARKER_COLORS[i % MARKER_COLORS.length];
-      return '<span><i style="background:' + color + '"></i>' + escapeHtml(c.questioned_label) + "</span>";
-    }).join("");
-
-    document.getElementById(chartId).innerHTML =
-      '<svg viewBox="0 0 ' + w + " " + h + '" role="img" aria-label="Strip plot of background similarity scores, with the questioned documents highlighted">' +
-      '<line class="calibration-axis" x1="' + pad + '" x2="' + (w - pad) + '" y1="' + (h - 24) + '" y2="' + (h - 24) + '"></line>' +
-      ticks + dots + markers +
-      "</svg>" +
-      '<div class="calibration-legend">' + legend + "</div>";
+  function renderCalibrationImage(containerId, imgPath, altText) {
+    var container = document.getElementById(containerId);
+    container.innerHTML = '<img class="calibration-histogram" src="' + imgPath + '" alt="' +
+      escapeHtml(altText) + '">';
   }
 
   // ---- contrastive-embedding scatter plot ---------------------------------
@@ -352,8 +310,12 @@
 
       renderCompareStack(ngrams, "ngrams-comparisons");
       renderCompareStack(rhymes, "rhymes-comparisons");
-      renderCalibration(calibration.ngrams, "ngrams-calibration-chart", "ngrams-calibration-caption", "bigram/trigram use");
-      renderCalibration(calibration.rhymes, "rhymes-calibration-chart", "rhymes-calibration-caption", "rhyme-word use");
+      renderCalibration(calibration.ngrams, "ngrams-calibration-caption", "bigram/trigram use");
+      renderCalibration(calibration.rhymes, "rhymes-calibration-caption", "rhyme-word use");
+      renderCalibrationImage("ngrams-calibration-chart", "data/ngram_similarity_distribution.png",
+        "Histogram of bigram/trigram similarity between " + calibration.ngrams.known_label + " and every other document in the corpus");
+      renderCalibrationImage("rhymes-calibration-chart", "data/rhyme_similarity_distribution.png",
+        "Histogram of rhyme-word similarity between " + calibration.rhymes.known_label + " and every other document in the corpus");
       renderEmbeddings(embeddings);
 
       // embeddings.json is intentionally always sample data (no model has been

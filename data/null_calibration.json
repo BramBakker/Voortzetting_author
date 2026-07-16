@@ -1,6 +1,6 @@
 {
  "rhymes": {
-  "known_label": "Cornicke",
+  "known_label": "Cronycke van Brabant",
   "background": [
    {
     "document": "ab_recht_ende_averecht",
@@ -1049,1064 +1049,1064 @@
   ],
   "comparisons": [
    {
-    "questioned_label": "Voortzetting",
+    "questioned_label": "De Voortzetting",
     "score": 0.08520145739802043,
     "percentile": 98.1
    }
   ]
  },
  "ngrams": {
-  "known_label": "Cornicke van Brabant",
+  "known_label": "Cronycke van Brabant",
   "background": [
    {
     "document": "ab_recht_ende_averecht",
-    "score": 0.01131028080617993
+    "score": 0.012106496986433799
    },
    {
     "document": "aiol",
-    "score": 0.05471526147757419
+    "score": 0.05383573988240712
    },
    {
     "document": "alexanders_geesten",
-    "score": 0.09610465498819003
+    "score": 0.10296449250998477
    },
    {
     "document": "anatomie_van_de_mens",
-    "score": 0.022176229853157606
+    "score": 0.023620791037618917
    },
    {
     "document": "antwerps_liedboek",
-    "score": 0.007884589842515588
+    "score": 0.009196531435460512
    },
    {
     "document": "arturs_doet",
-    "score": 0.09017649592108953
+    "score": 0.09737169621137709
    },
    {
     "document": "aubri_de_borgengoen",
-    "score": 0.02002507643196834
+    "score": 0.021507886645993526
    },
    {
     "document": "baghynken_van_parys",
-    "score": 0.02559409419952765
+    "score": 0.028158424617809333
    },
    {
     "document": "barlaam_en_josaphat_fragm_ge",
-    "score": 0.01141117210337181
+    "score": 0.012603835592913285
    },
    {
     "document": "barlaam_en_josaphat_fragm_go",
-    "score": 0.01960550334659518
+    "score": 0.021217782540281387
    },
    {
     "document": "beatrijs",
-    "score": 0.036435648768131206
+    "score": 0.039024528432620685
    },
    {
     "document": "bediedenisse_van_der_missen",
-    "score": 0.04403370149045797
+    "score": 0.0472839985092431
    },
    {
     "document": "beerte_metten_breden_voeten",
-    "score": 0.024790641427389393
+    "score": 0.02680386151455274
    },
    {
     "document": "beginsel_der_oorlogen_van_luyck",
-    "score": 0.07256271470805466
+    "score": 0.06150213091890265
    },
    {
     "document": "berijmd_commentaar_op_het_hooglied_fragm_w",
-    "score": 0.033850632663008445
+    "score": 0.03663662535983542
    },
    {
     "document": "berlijnse_liederenhandschrift",
-    "score": 0.0011434012193237244
+    "score": 0.0012098249209092614
    },
    {
     "document": "boec_exemplaer",
-    "score": 0.07978027385850844
+    "score": 0.08489803423188844
    },
    {
     "document": "boec_van_den_houte",
-    "score": 0.038753046821874235
+    "score": 0.04170213331027842
    },
    {
     "document": "borchgrave_van_couchi",
-    "score": 0.12612405960787745
+    "score": 0.13392603049848126
    },
    {
     "document": "borchgrave_van_couchi_fragm_a",
-    "score": 0.06682982345633688
+    "score": 0.07204609203249111
    },
    {
     "document": "borchgrave_van_couchi_fragm_br",
-    "score": 0.019142097419089336
+    "score": 0.020447615023296072
    },
    {
     "document": "borchgrave_van_couchi_fragm_dp",
-    "score": 0.03398286436239959
+    "score": 0.03643473998167581
    },
    {
     "document": "borchgravinne_van_vergi__1",
-    "score": 0.07754698552370054
+    "score": 0.05832265626948363
    },
    {
     "document": "borchgravinne_van_vergi__2",
-    "score": 0.02306743968413057
+    "score": 0.02476685313317495
    },
    {
     "document": "boudewijn_van_seborch_fragm_a",
-    "score": 0.009600909426162223
+    "score": 0.010903258708601666
    },
    {
     "document": "boudewijn_van_seborch_fragm_m",
-    "score": 0.02499036532002651
+    "score": 0.027150624809915563
    },
    {
     "document": "brabantsche_yeesten__1-5",
-    "score": 0.21906359803283917
+    "score": 0.1883000494077237
    },
    {
     "document": "buskenblazer",
-    "score": 0.01644779591329407
+    "score": 0.01767788161404741
    },
    {
     "document": "chanson_d_aspremont",
-    "score": 0.006720792595681249
+    "score": 0.007220198976227235
    },
    {
     "document": "clausule_vander_bible",
-    "score": 0.029052744835969407
+    "score": 0.0316362440281877
    },
    {
     "document": "collectief_lunarium_i",
-    "score": 0.019431717515848032
+    "score": 0.02099971955515109
    },
    {
     "document": "collectief_lunarium_ii",
-    "score": 0.026972253026136445
+    "score": 0.028843846172197343
    },
    {
     "document": "collectief_lunarium_iii",
-    "score": 0.01889113006166674
+    "score": 0.02031778021931035
    },
    {
     "document": "cyromanchie_van_den_pape_van_den_hamme_chiromantie",
-    "score": 0.029290257031429498
+    "score": 0.03263135586048421
    },
    {
     "document": "dat_boec_vander_wraken",
-    "score": 0.11379833173179865
+    "score": 0.1124387960909904
    },
    {
     "document": "de_spieghel_der_menscheliker_behoudenesse",
-    "score": 0.089775159567902
+    "score": 0.09656685247895365
    },
    {
     "document": "der_kerken_claghe",
-    "score": 0.015839032145475634
+    "score": 0.016986993698859025
    },
    {
     "document": "der_leken_spieghel",
-    "score": 0.1100502920723553
+    "score": 0.11791649309006999
    },
    {
     "document": "der_mannen_ende_vrouwen_heimelijcheit",
-    "score": 0.06683134064063434
+    "score": 0.07268873909367853
    },
    {
     "document": "der_minnen_loep",
-    "score": 0.13716696524024646
+    "score": 0.14509444321269743
    },
    {
     "document": "der_vrouwen_heimelijcheit",
-    "score": 0.06420305470794463
+    "score": 0.06919292130817432
    },
    {
     "document": "der_ystorien_bloeme",
-    "score": 0.07604368395814609
+    "score": 0.08174269357691749
    },
    {
     "document": "derde_martijn",
-    "score": 0.02654175622310296
+    "score": 0.028714957875341927
    },
    {
     "document": "devoot_ende_profitelyck_boecxken_h",
-    "score": 0.009106609373020758
+    "score": 0.009757283270491347
    },
    {
     "document": "die_dietsche_lucidarius",
-    "score": 0.06817836162958778
+    "score": 0.07372569302732065
    },
    {
     "document": "dietsche_doctrinale",
-    "score": 0.06687645441287256
+    "score": 0.07172160174114468
    },
    {
     "document": "dispitacie",
-    "score": 0.04189387185170625
+    "score": 0.04579707815894121
    },
    {
     "document": "disputacie_van_onser_vrouwen",
-    "score": 0.018600651088963284
+    "score": 0.020103348216920218
    },
    {
     "document": "drie_daghe_here",
-    "score": 0.01906880744578802
+    "score": 0.020276992742144544
    },
    {
     "document": "dystorie_van_saladine_h",
-    "score": 0.1067566194226841
+    "score": 0.11140567691552383
    },
    {
     "document": "eerste_martijn",
-    "score": 0.036610814901444556
+    "score": 0.0392873137415637
    },
    {
     "document": "esmoreit",
-    "score": 0.04409343915368433
+    "score": 0.04732815518003755
    },
    {
     "document": "esopet",
-    "score": 0.044087235648780414
+    "score": 0.04791259765336446
    },
    {
     "document": "ferguut",
-    "score": 0.06586673310372858
+    "score": 0.07142945319228612
    },
    {
     "document": "fierabras",
-    "score": 0.0488829320438265
+    "score": 0.0531487109610544
    },
    {
     "document": "flandrijs_fragm_s",
-    "score": 0.05016391617209652
+    "score": 0.05455046883424883
    },
    {
     "document": "floovent",
-    "score": 0.045878505325215035
+    "score": 0.04925828505112895
    },
    {
     "document": "florent_ende_durant",
-    "score": 0.015848914946794468
+    "score": 0.01700748897100723
    },
    {
     "document": "florigout_fragm_db",
-    "score": 0.02024812596332807
+    "score": 0.021549562625632523
    },
    {
     "document": "florigout_fragm_l",
-    "score": 0.04997616814236868
+    "score": 0.053618296233448305
    },
    {
     "document": "floris_ende_blancefloer",
-    "score": 0.07085591359424463
+    "score": 0.07523983876366432
    },
    {
     "document": "frenesie",
-    "score": 0.009815123813175688
+    "score": 0.01049218403905506
    },
    {
     "document": "fysionomie",
-    "score": 0.030380284326991375
+    "score": 0.033057930050292325
    },
    {
     "document": "gedicht_over_de_hemeltekenen",
-    "score": 0.014736720209679281
+    "score": 0.015700727955331974
    },
    {
     "document": "gedichten_hildegaersberch__hs_g",
-    "score": 0.0172787334867398
+    "score": 0.018938949049020742
    },
    {
     "document": "geraert_van_viane",
-    "score": 0.01872137091502106
+    "score": 0.016594241259133148
    },
    {
     "document": "gloriant",
-    "score": 0.0519126299123646
+    "score": 0.0490824624818141
    },
    {
     "document": "glose_op_het_sint-jansevangelie",
-    "score": 0.04291803103646794
+    "score": 0.04640331251750682
    },
    {
     "document": "godevaert_metten_baerde",
-    "score": 0.025819793873923684
+    "score": 0.027464327070708398
    },
    {
     "document": "godevaerts_kintshede",
-    "score": 0.014511315329010909
+    "score": 0.010436132604957243
    },
    {
     "document": "grimbergse_oorlog",
-    "score": 0.21139112003071175
+    "score": 0.19179976955707076
    },
    {
     "document": "gruuthuse-handschrift_gebeden",
-    "score": 0.014184976947871658
+    "score": 0.015243830841402704
    },
    {
     "document": "gruuthuse-handschrift_gedichten",
-    "score": 0.04444173497481108
+    "score": 0.04820899214594759
    },
    {
     "document": "gruuthuse-handschrift_liederen",
-    "score": 0.003139635537768457
+    "score": 0.0034924043291674287
    },
    {
     "document": "gwidekijn_van_sassen",
-    "score": 0.02355205525503013
+    "score": 0.02724044688577999
    },
    {
     "document": "haagse_liederenhs",
-    "score": 0.0034557974772175338
+    "score": 0.0036667484127209577
    },
    {
     "document": "hexe",
-    "score": 0.012848725210837174
+    "score": 0.01368542066942322
    },
    {
     "document": "heymelijchede_der_heymelijcheit",
-    "score": 0.06637839939688475
+    "score": 0.07150049236596684
    },
    {
     "document": "historie_van_den_grale",
-    "score": 0.11117111282112355
+    "score": 0.12010440891196908
    },
    {
     "document": "historie_van_gaver_capeel",
-    "score": 0.0317048287666636
+    "score": 0.03379224342067627
    },
    {
     "document": "historie_van_troyen",
-    "score": 0.23069427558304403
+    "score": 0.24637077962390638
    },
    {
     "document": "huge_van_bordeeus_fragm_l",
-    "score": 0.03327032999672711
+    "score": 0.036026158615167024
    },
    {
     "document": "huge_van_bordeeus_fragm_m",
-    "score": 0.04763290528540199
+    "score": 0.05133444423773837
    },
    {
     "document": "ierste_musyck_boexken",
-    "score": 0.0012703662087805603
+    "score": 0.0013479126917388053
    },
    {
     "document": "jan_splinters_testament",
-    "score": 0.019115767244743884
+    "score": 0.02087621860226605
    },
    {
     "document": "jans_teesteye",
-    "score": 0.0809240687761359
+    "score": 0.08672890748647259
    },
    {
     "document": "jonathas_ende_rosafiere",
-    "score": 0.09108100696050914
+    "score": 0.0971383278455968
    },
    {
     "document": "karel_ende_elegast",
-    "score": 0.05457960292081817
+    "score": 0.0585015538497352
    },
    {
     "document": "korte_kroniek_van_brabant_korte_versie_1",
-    "score": 0.09875978673525808
+    "score": 0.08668070340536196
    },
    {
     "document": "korte_kroniek_van_brabant_korte_versie_2",
-    "score": 0.16543076788422198
+    "score": 0.14621633621979546
    },
    {
     "document": "korte_kroniek_van_brabant_lange_versie",
-    "score": 0.11941524659153259
+    "score": 0.10305301680719751
    },
    {
     "document": "lanceloet_en_het_hert_met_de_witte_voet",
-    "score": 0.03589299683568174
+    "score": 0.038666824600221826
    },
    {
     "document": "lanseloet_van_denemerken",
-    "score": 0.04728569107920429
+    "score": 0.05070906719669528
    },
    {
     "document": "lantsloot_van_der_haghedochte",
-    "score": 0.07657815326923834
+    "score": 0.08135357721023254
    },
    {
     "document": "lapidarijs",
-    "score": 0.019668380350168758
+    "score": 0.0211854388680221
    },
    {
     "document": "leven_van_sint_trudo",
-    "score": 0.027800822574508537
+    "score": 0.031050573015676732
    },
    {
     "document": "lion_van_bourges",
-    "score": 0.020075462870431274
+    "score": 0.021495283852064045
    },
    {
     "document": "lippijn",
-    "score": 0.016888264169341943
+    "score": 0.018231938382701502
    },
    {
     "document": "loyhier_en_malaert_fragm_a",
-    "score": 0.019759662993009592
+    "score": 0.021332243703423976
    },
    {
     "document": "loyhier_en_malaert_fragm_g",
-    "score": 0.001795040906594211
+    "score": 0.002125027512445445
    },
    {
     "document": "loyhier_en_malaert_fragm_l1",
-    "score": 0.021094638486206577
+    "score": 0.022540918642325176
    },
    {
     "document": "loyhier_en_malaert_fragm_l2",
-    "score": 0.018867998306646278
+    "score": 0.020219737156944497
    },
    {
     "document": "lundse_liederen_a",
-    "score": 0.002492041659493287
+    "score": 0.002644162413920969
    },
    {
     "document": "lundse_liederen_b",
-    "score": 0.007479162885842041
+    "score": 0.008057749024007006
    },
    {
     "document": "maanzodiologium",
-    "score": 0.016760979207034926
+    "score": 0.01822906420814742
    },
    {
     "document": "madelgijs_fragm_a",
-    "score": 0.025318612444926867
+    "score": 0.028452297188044366
    },
    {
     "document": "madelgijs_fragm_be",
-    "score": 0.014571537954499622
+    "score": 0.01593230096242438
    },
    {
     "document": "madelgijs_fragm_d",
-    "score": 0.018704863500937325
+    "score": 0.02016690877030697
    },
    {
     "document": "madelgijs_fragm_g1",
-    "score": 0.004738850754414744
+    "score": 0.0051380316410540245
    },
    {
     "document": "madelgijs_fragm_g2",
-    "score": 0.006444458669720554
+    "score": 0.006924775566853207
    },
    {
     "document": "madelgijs_fragm_le1",
-    "score": 0.010685500776181153
+    "score": 0.011709997226535965
    },
    {
     "document": "madelgijs_fragm_le2",
-    "score": 0.01992517400684011
+    "score": 0.021915918541690275
    },
    {
     "document": "madelgijs_fragm_le3",
-    "score": 0.016351091885258483
+    "score": 0.01767224941560777
    },
    {
     "document": "madelgijs_fragm_le4",
-    "score": 0.024235348484828688
+    "score": 0.0264397890633512
    },
    {
     "document": "madelgijs_fragm_lo",
-    "score": 0.013340450717381264
+    "score": 0.014354459021433941
    },
    {
     "document": "madelgijs_fragm_n",
-    "score": 0.04019234685510904
+    "score": 0.025826219201070193
    },
    {
     "document": "madelgijs_fragm_p",
-    "score": 0.00877284051621471
+    "score": 0.009715732736043753
    },
    {
     "document": "madelgijs_fragm_r",
-    "score": 0.017635073145632733
+    "score": 0.01883756799374634
    },
    {
     "document": "melibeus",
-    "score": 0.06881005808400072
+    "score": 0.07259785212942065
    },
    {
     "document": "mengeldichten_hadewijch",
-    "score": 0.020880716063530827
+    "score": 0.022423452413460925
    },
    {
     "document": "merlijn-continuatie_fragm_a",
-    "score": 0.03411626812915119
+    "score": 0.036597120811366915
    },
    {
     "document": "merlijn-continuatie_fragm_ma",
-    "score": 0.026330676470806495
+    "score": 0.028254717117789728
    },
    {
     "document": "merlijn-continuatie_fragm_mu",
-    "score": 0.044879297872178855
+    "score": 0.048456580100088235
    },
    {
     "document": "merlijns_boec",
-    "score": 0.02074245578946386
+    "score": 0.022336584076026293
    },
    {
     "document": "natuurkunde_van_het_geheelal",
-    "score": 0.0475201208571323
+    "score": 0.051057875032146566
    },
    {
     "document": "nieuwe_doctrinael",
-    "score": 0.07664758011683005
+    "score": 0.08215072569796066
    },
    {
     "document": "noch_die_tien_ghebode",
-    "score": 0.009075417595832446
+    "score": 0.009629404872154707
    },
    {
     "document": "noch_van_salladine",
-    "score": 0.015155997280030462
+    "score": 0.01668339404946436
    },
    {
     "document": "o_crux_lignum_triumphale",
-    "score": 0.0641428108874087
+    "score": 0.04424333136456793
    },
    {
     "document": "ogier_van_denemarken_fragm_br1",
-    "score": 0.012754223304155519
+    "score": 0.0135328897849715
    },
    {
     "document": "ogier_van_denemarken_fragm_br2",
-    "score": 0.01655200757524196
+    "score": 0.01819374153330496
    },
    {
     "document": "ogier_van_denemarken_fragm_k",
-    "score": 0.015964145610469885
+    "score": 0.01757727962168909
    },
    {
     "document": "ogier_van_denemarken_fragm_l",
-    "score": 0.0105097052080503
+    "score": 0.011295471258580412
    },
    {
     "document": "ongeidentificeerd_1",
-    "score": 0.002606038877980642
+    "score": 0.003004684772460748
    },
    {
     "document": "ongeidentificeerd_2",
-    "score": 0.014218909664171888
+    "score": 0.015876237457507283
    },
    {
     "document": "ongeidentificeerd_3",
-    "score": 0.035090789942356114
+    "score": 0.0384505202113913
    },
    {
     "document": "ongeidentificeerd_4",
-    "score": 0.017354273968428792
+    "score": 0.018589733209023938
    },
    {
     "document": "ongeidentificeerd_6",
-    "score": 0.02124382324889072
+    "score": 0.022760016232829833
    },
    {
     "document": "ongeidentificeerd_fragment",
-    "score": 0.02322961195907235
+    "score": 0.0251542618909536
    },
    {
     "document": "ons_heren_passie",
-    "score": 0.03177665418222103
+    "score": 0.03406064678375764
    },
    {
     "document": "parthonopeus_van_bloys_fragm_be",
-    "score": 0.012632579403599582
+    "score": 0.013602390441614385
    },
    {
     "document": "parthonopeus_van_bloys_fragm_br",
-    "score": 0.08827296694283616
+    "score": 0.09209787924028659
    },
    {
     "document": "parthonopeus_van_bloys_fragm_k1",
-    "score": 0.006688619752715883
+    "score": 0.00730572851380339
    },
    {
     "document": "parthonopeus_van_bloys_fragm_k3",
-    "score": 0.02462810603929266
+    "score": 0.027089403783235336
    },
    {
     "document": "parthonopeus_van_bloys_fragm_ma",
-    "score": 0.02689820890460003
+    "score": 0.028800558860230037
    },
    {
     "document": "parthonopeus_van_bloys_fragm_pr",
-    "score": 0.017535699373536783
+    "score": 0.019482040688326593
    },
    {
     "document": "queeste_van_den_grale",
-    "score": 0.08575448431915861
+    "score": 0.09216904313858697
    },
    {
     "document": "reinaerts_historie",
-    "score": 0.07494112809848948
+    "score": 0.08030032934309948
    },
    {
     "document": "renout_van_montalbaen_fragm_be",
-    "score": 0.04585052766398083
+    "score": 0.04921379801282042
    },
    {
     "document": "renout_van_montalbaen_fragm_dh",
-    "score": 0.014801948605059482
+    "score": 0.015839652211129172
    },
    {
     "document": "renout_van_montalbaen_fragm_l",
-    "score": 0.014412676263262238
+    "score": 0.01541583322865884
    },
    {
     "document": "renout_van_montalbaen_fragm_s",
-    "score": 0.025332326015737306
+    "score": 0.026959115063170728
    },
    {
     "document": "rijmkroniek_van_holland",
-    "score": 0.0919710338090487
+    "score": 0.09320698465311915
    },
    {
     "document": "rijmkroniek_van_woeringen",
-    "score": 0.19507372430082018
+    "score": 0.14936187372493212
    },
    {
     "document": "rijmspreuken",
-    "score": 0.0008219014183306395
+    "score": 0.000872072435073217
    },
    {
     "document": "rinclus",
-    "score": 0.0343290503685174
+    "score": 0.03688706553628941
    },
    {
     "document": "roelantslied_fragm_a",
-    "score": 0.0934490551950707
+    "score": 0.09961722261500673
    },
    {
     "document": "roelantslied_fragm_br",
-    "score": 0.01554787509884325
+    "score": 0.016536774313657413
    },
    {
     "document": "roelantslied_fragm_dh",
-    "score": 0.021780272825929935
+    "score": 0.023430997034982387
    },
    {
     "document": "roelantslied_fragm_ri",
-    "score": 0.02626367176697845
+    "score": 0.026088786980510384
    },
    {
     "document": "roelantslied_fragm_ro",
-    "score": 0.007876144518474295
+    "score": 0.008493014795481655
    },
    {
     "document": "roman_der_lorreinen_fragm_gi",
-    "score": 0.09284726247670773
+    "score": 0.09916865738956537
    },
    {
     "document": "roman_van_antiochie_fragm_g",
-    "score": 0.0044530916158946245
+    "score": 0.004979595476711083
    },
    {
     "document": "roman_van_antiochie_fragm_l",
-    "score": 0.007747863618677038
+    "score": 0.00822212967066899
    },
    {
     "document": "roman_van_antiochie_fragm_w",
-    "score": 0.011603414467703275
+    "score": 0.01301353117286133
    },
    {
     "document": "roman_van_caesar_fragm_br",
-    "score": 0.08148897895579019
+    "score": 0.08786010604572064
    },
    {
     "document": "roman_van_cassamus__kort_1350",
-    "score": 0.05551053769904067
+    "score": 0.06002589140801582
    },
    {
     "document": "roman_van_cassamus__lang_1350",
-    "score": 0.02325000889493274
+    "score": 0.025233465403522472
    },
    {
     "document": "roman_van_cassamus__lang_1360",
-    "score": 0.01835225090767771
+    "score": 0.019684421027450726
    },
    {
     "document": "roman_van_cassant",
-    "score": 0.009620417476610518
+    "score": 0.01031109252460541
    },
    {
     "document": "roman_van_den_riddere_metter_mouwen",
-    "score": 0.06676165532033299
+    "score": 0.07209940847206504
    },
    {
     "document": "roman_van_den_riddere_metter_mouwen_fragm_br",
-    "score": 0.02725856127697715
+    "score": 0.029318959400752208
    },
    {
     "document": "roman_van_florimont",
-    "score": 0.03220270854746546
+    "score": 0.03468514842433694
    },
    {
     "document": "roman_van_iechemas",
-    "score": 0.02483554995756226
+    "score": 0.026858997109276667
    },
    {
     "document": "roman_van_jonathas_ende_rosafiere_fragm_a",
-    "score": 0.023237815275573847
+    "score": 0.024765069250422454
    },
    {
     "document": "roman_van_jonathas_ende_rosafiere_fragm_g",
-    "score": 0.029589480284774802
+    "score": 0.03147421805359663
    },
    {
     "document": "roman_van_lancelot",
-    "score": 0.10006847597949978
+    "score": 0.10794850588172951
    },
    {
     "document": "roman_van_lancelot_fragm_br",
-    "score": 0.02775132869985001
+    "score": 0.029769936235835896
    },
    {
     "document": "roman_van_limborch",
-    "score": 0.12221541346822035
+    "score": 0.12530876790613868
    },
    {
     "document": "roman_van_moriaen",
-    "score": 0.06927128503127566
+    "score": 0.0744896417717305
    },
    {
     "document": "roman_van_perchevael",
-    "score": 0.07338454170733158
+    "score": 0.07874283107257783
    },
    {
     "document": "roman_van_perchevael_fragm_br",
-    "score": 0.015629186969173908
+    "score": 0.01678618307018601
    },
    {
     "document": "roman_van_saladin",
-    "score": 0.008402134740358357
+    "score": 0.00901718049263958
    },
    {
     "document": "roman_van_torec",
-    "score": 0.06937157993583344
+    "score": 0.07416518708978116
    },
    {
     "document": "roman_van_walewein",
-    "score": 0.0825075508844564
+    "score": 0.08157053268342969
    },
    {
     "document": "rose",
-    "score": 0.08758269997824254
+    "score": 0.09433159396858515
    },
    {
     "document": "rubben",
-    "score": 0.023302252698870252
+    "score": 0.02473158850562839
    },
    {
     "document": "schepping",
-    "score": 0.020502967037010086
+    "score": 0.022099215854369383
    },
    {
     "document": "segheliin_van_jerusalem",
-    "score": 0.10835296546845555
+    "score": 0.11226993525423203
    },
    {
     "document": "sint_patricius_vagevuur",
-    "score": 0.03194112923737918
+    "score": 0.03497775111380011
    },
    {
     "document": "sint_servaes",
-    "score": 0.1646929452937825
+    "score": 0.17509493469617024
    },
    {
     "document": "sinte_franciscus_leven",
-    "score": 0.06830226083039738
+    "score": 0.0741721105041944
    },
    {
     "document": "sinte_kunera",
-    "score": 0.05921152227107189
+    "score": 0.06161369715667816
    },
    {
     "document": "slag_van_crecy",
-    "score": 0.026580995767138873
+    "score": 0.028550415245564547
    },
    {
     "document": "speghel_der_wijsheit",
-    "score": 0.04520434324126223
+    "score": 0.04925580071061211
    },
    {
     "document": "spel_van_abraham_en_sara",
-    "score": 0.0032009805208806537
+    "score": 0.0033963767615051736
    },
    {
     "document": "spel_van_de_antichrist",
-    "score": 0.024552409509390312
+    "score": 0.026456014908407974
    },
    {
     "document": "spiegel_der_jongers",
-    "score": 0.018202801082265897
+    "score": 0.02003824557581886
    },
    {
     "document": "spiegel_der_sonden",
-    "score": 0.06883590022187366
+    "score": 0.07510709335214968
    },
    {
     "document": "spiegel_der_sonden_fragm_ge1",
-    "score": 0.009103951012682764
+    "score": 0.009735495345257233
    },
    {
     "document": "spiegel_der_sonden_fragm_ge2",
-    "score": 0.009686544963785916
+    "score": 0.010466555604731248
    },
    {
     "document": "spiegel_der_sonden_fragm_mu",
-    "score": 0.009385134934824268
+    "score": 0.010144255953127916
    },
    {
     "document": "spiegel_historiael__1_3_4_maerlant",
-    "score": 0.12851258430666926
+    "score": 0.1356549223957724
    },
    {
     "document": "spiegel_historiael__2",
-    "score": 0.115179735191927
+    "score": 0.12440397179342302
    },
    {
     "document": "spiegel_historiael__2_fragm_ah",
-    "score": 0.014407251149695578
+    "score": 0.015316207090751575
    },
    {
     "document": "spiegel_historiael__2_fragm_an",
-    "score": 0.018150114343790852
+    "score": 0.019532501263968625
    },
    {
     "document": "spiegel_historiael__2_fragm_brg",
-    "score": 0.030823297052903785
+    "score": 0.03310717167490538
    },
    {
     "document": "spiegel_historiael__2_fragm_brs",
-    "score": 0.017919230240556236
+    "score": 0.01910102421222646
    },
    {
     "document": "spiegel_historiael__2_fragm_d",
-    "score": 0.02203266131869198
+    "score": 0.023837960705996947
    },
    {
     "document": "spiegel_historiael__2_fragm_ge1",
-    "score": 0.02721604486890182
+    "score": 0.02984278716970033
    },
    {
     "document": "spiegel_historiael__2_fragm_l",
-    "score": 0.017959731511695436
+    "score": 0.019351780874907378
    },
    {
     "document": "spiegel_historiael__4_velthem__fragm_be",
-    "score": 0.031161117730966786
+    "score": 0.03403894046344062
    },
    {
     "document": "spiegel_historiael__4_velthem__fragm_brs",
-    "score": 0.044806496734257385
+    "score": 0.04786071950473406
    },
    {
     "document": "spiegel_historiael__4_velthem__fragm_ge1",
-    "score": 0.016952022964415163
+    "score": 0.018106525207858347
    },
    {
     "document": "spiegel_historiael__4_velthem__fragm_ge3",
-    "score": 0.04337767476727736
+    "score": 0.04704637045669613
    },
    {
     "document": "spiegel_historiael__4_velthem__fragm_ge4",
-    "score": 0.049367748770926624
+    "score": 0.053072136882598424
    },
    {
     "document": "spiegel_historiael__4_velthem__fragm_ge5",
-    "score": 0.0431974598741702
+    "score": 0.04733321651772174
    },
    {
     "document": "spiegel_historiael__4_velthem__fragm_ge6",
-    "score": 0.04577468580627475
+    "score": 0.05051484792180327
    },
    {
     "document": "spiegel_historiael__4_velthem__fragm_ge7",
-    "score": 0.06894595650124491
+    "score": 0.06569226374818267
    },
    {
     "document": "spiegel_historiael__4_velthem__fragm_l",
-    "score": 0.046006850210225554
+    "score": 0.049975545599732656
    },
    {
     "document": "spiegel_historiael__4_velthem__fragm_m",
-    "score": 0.04085383832622999
+    "score": 0.04434862504266976
    },
    {
     "document": "spiegel_historiael__4_velthem__fragm_we",
-    "score": 0.028692216781958546
+    "score": 0.031004777889447683
    },
    {
     "document": "spiegel_historiael__4_velthem__fragm_wr",
-    "score": 0.025708774922130456
+    "score": 0.027701082083884408
    },
    {
     "document": "spiegel_historiael__5",
-    "score": 0.15495122934312722
+    "score": 0.1507462748713486
    },
    {
     "document": "strofische_gedichten",
-    "score": 0.016433142758102898
+    "score": 0.018205986899503486
    },
    {
     "document": "suverlijc_boecxken",
-    "score": 0.004928930678909783
+    "score": 0.005229102437933015
    },
    {
     "document": "theophilus",
-    "score": 0.05403524083596579
+    "score": 0.057892570101247966
    },
    {
     "document": "tien_plaghen",
-    "score": 0.053500280124764814
+    "score": 0.05758356776411773
    },
    {
     "document": "truwanten",
-    "score": 0.007353420626173058
+    "score": 0.007896096205436253
    },
    {
     "document": "tvveeste_musyck_boexken",
-    "score": 0.00614710623255278
+    "score": 0.0066105965743713056
    },
    {
     "document": "tweede_martijn",
-    "score": 0.014051519836431178
+    "score": 0.015033329515473233
    },
    {
     "document": "valentijn_en_nameloos_fragm_be",
-    "score": 0.02213080531122909
+    "score": 0.023758268509879926
    },
    {
     "document": "valentijn_en_nameloos_fragm_ge",
-    "score": 0.01923491757221648
+    "score": 0.020676397232905923
    },
    {
     "document": "van_den_derden_eduwaert",
-    "score": 0.2051454609893934
+    "score": 0.1990173544810741
    },
    {
     "document": "van_den_lande_van_over_zee",
-    "score": 0.01734678834212048
+    "score": 0.018732749792442466
    },
    {
     "document": "van_den_neghen_besten__kort",
-    "score": 0.04872059967052398
+    "score": 0.052856353560274905
    },
    {
     "document": "van_den_neghen_besten__lang",
-    "score": 0.05076796433023323
+    "score": 0.05437574426178303
    },
    {
     "document": "van_den_verkeerden_martijn",
-    "score": 0.009934066690849008
+    "score": 0.010793752324622364
    },
    {
     "document": "van_den_vii_vroeden_van_binnen_rome",
-    "score": 0.06727812435052194
+    "score": 0.07243882624134475
    },
    {
     "document": "van_den_vijf_vrouden",
-    "score": 0.010501457101094793
+    "score": 0.011168527550791327
    },
    {
     "document": "van_den_vos_reynaerde",
-    "score": 0.05884879798543241
+    "score": 0.06308098414083048
    },
    {
     "document": "van_der_wive_wonderlijcheit_kort",
-    "score": 0.012951968032129614
+    "score": 0.013909320433833314
    },
    {
     "document": "van_der_wive_wonderlijcheit_lang",
-    "score": 0.017642113462314393
+    "score": 0.019061783754959587
    },
    {
     "document": "van_ghevene",
-    "score": 0.01381140464959822
+    "score": 0.014842802555795967
    },
    {
     "document": "van_maskeroen",
-    "score": 0.04209289362319118
+    "score": 0.04499515173591885
    },
    {
     "document": "van_ons_heren_wonden",
-    "score": 0.01401456138202878
+    "score": 0.015090739358106352
    },
    {
     "document": "van_saladijn",
-    "score": 0.025841423868823453
+    "score": 0.027765378755327523
    },
    {
     "document": "van_sente_brandane",
-    "score": 0.03832333759846515
+    "score": 0.04115993601443807
    },
    {
     "document": "van_ses_vaerwen",
-    "score": 0.029027136593214018
+    "score": 0.032029441333481366
    },
    {
     "document": "van_smeinscen_lede",
-    "score": 0.038044980037898225
+    "score": 0.041035490349158536
    },
    {
     "document": "vanden_levene_ons_heren",
-    "score": 0.04710843032865961
+    "score": 0.050596152830773684
    },
    {
     "document": "vanden_vier_vingheren_ende_vanden_dume",
-    "score": 0.020207083662158964
+    "score": 0.02161448681249608
    },
    {
     "document": "vanden_winter_ende_vanden_somer",
-    "score": 0.03880288074094933
+    "score": 0.04152027831514643
    },
    {
     "document": "vander_rijcheit_ende_vander_doot",
-    "score": 0.016388068792222647
+    "score": 0.017978678839521922
    },
    {
     "document": "vierde_martijn",
-    "score": 0.0366905021450852
+    "score": 0.03942716443134768
    },
    {
     "document": "vlaamse_rose_fragm_beu",
-    "score": 0.045249901983038104
+    "score": 0.048700476029953456
    },
    {
     "document": "voortzetting",
-    "score": 0.3488822753330595
+    "score": 0.25798412274122
    },
    {
     "document": "walewein_ende_keye",
-    "score": 0.06827977778303969
+    "score": 0.07345350566060214
    },
    {
     "document": "willem_van_oringen",
-    "score": 0.023843249051232866
+    "score": 0.025770410552338502
    },
    {
     "document": "wrake_van_ragisel",
-    "score": 0.05981599623182999
+    "score": 0.06429509268690946
    },
    {
     "document": "wrake_van_ragisel_fragm_d1",
-    "score": 0.013315205460065309
+    "score": 0.015237186859275925
    }
   ],
   "comparisons": [
    {
-    "questioned_label": "Voortzetting",
-    "score": 0.3488822753330595,
+    "questioned_label": "De Voortzetting",
+    "score": 0.25798412274122,
     "percentile": 99.6
    }
   ]
