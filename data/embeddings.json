@@ -1,0 +1,147 @@
+{
+ "note": "Line-level stylometric projections for Cronycke van Brabant and Brabantsche Yeesten.",
+ "known_label": "Cronycke van Brabant",
+ "questioned_label": "Brabantsche Yeesten",
+ "points": [
+  {
+   "id": "k1",
+   "doc": "known",
+   "x": -0.0031,
+   "y": 0.0029,
+   "line_no": 913,
+   "match_index": 1,
+   "lines": [
+    "Op den riken casteel scoene,",
+    "Die sy daer hadden doen maken.",
+    "Ende vrouwe Swane, verstaet die sake,",
+    "Voer woenen op casteel van Niemagen."
+   ]
+  },
+  {
+   "id": "k2",
+   "doc": "known",
+   "x": -0.0028,
+   "y": 0.0005,
+   "line_no": 205,
+   "match_index": 1,
+   "lines": [
+    "Volch een swane, van scoender gedaene,",
+    "Tot Nijemaghen, daer hy .j. maget scoene",
+    "Vant, die hem die keijser coene",
+    "Ghaf, die was, al sonder blame,"
+   ]
+  },
+  {
+   "id": "k3",
+   "doc": "known",
+   "x": -0.0012,
+   "y": 0.0008,
+   "line_no": 2080,
+   "match_index": 1,
+   "lines": [
+    "Gaf hij den selven capellaen",
+    "Die hy inden kerker vant.",
+    "Want geboren uut Brabant",
+    "Soe was die pape, verstaet den sen;"
+   ]
+  },
+  {
+   "id": "k4",
+   "doc": "known",
+   "x": 0.0123,
+   "y": 0.0039,
+   "line_no": 2007,
+   "match_index": 1,
+   "lines": [
+    "Ende alle heeren exsemplaren,",
+    "Die anteren der wapenen aert;",
+    "Ende uten ryken, troyschen bogaert",
+    "Hier neder comen, in hoeghen moede;"
+   ]
+  },
+  {
+   "id": "k5",
+   "doc": "known",
+   "x": -0.0028,
+   "y": 0.0009,
+   "line_no": 1655,
+   "match_index": 1,
+   "lines": [
+    "Ende, dat woudy waer maken",
+    "Met sinen live, tusschen .ij. sonne scine;",
+    "Ende boet hem den hanscoen sine,",
+    "Ende yesch den keiser hoefs recht."
+   ]
+  },
+  {
+   "id": "q1",
+   "doc": "questioned",
+   "x": -0.0072,
+   "y": 0.0015,
+   "line_no": "[6]4574",
+   "match_index": 1,
+   "lines": [
+    "Dacht hi dat hi woude volbringen",
+    "Tselve, dat die opperste raet",
+    "Vort hadde gheset van deser daet,",
+    "Meinende bi der hulpen sijn"
+   ]
+  },
+  {
+   "id": "q2",
+   "doc": "questioned",
+   "x": -0.0001,
+   "y": -0.0018,
+   "line_no": "[7]7,12145",
+   "match_index": 1,
+   "lines": [
+    "Alsoe dat vore bescreven steet,",
+    "Te wetene; hoort hier dander besceet:",
+    "Heer Jan van Coudenberghe, dat wet,",
+    "Riddere, ende Heinric Cluetinc met,"
+   ]
+  },
+  {
+   "id": "q3",
+   "doc": "questioned",
+   "x": -0.0017,
+   "y": -0.0019,
+   "line_no": "[6]3360",
+   "match_index": 1,
+   "lines": [
+    "In coninc Philips van Vranckerijc,",
+    "Die hem van der saken te hant",
+    "Liet informeren. Na dat hi vant",
+    "Datter veele swaerheiden, tien tiden,"
+   ]
+  },
+  {
+   "id": "q4",
+   "doc": "questioned",
+   "x": 0.0052,
+   "y": -0.0047,
+   "line_no": "[7]10187",
+   "match_index": 1,
+   "lines": [
+    "Ghebruedere, dits ware vite,",
+    "Ende Jan Taye van Eelwite,",
+    "Daer na Wouter, Willem, Jan",
+    "Pipenpoy, ghebrueders, ende dan"
+   ]
+  },
+  {
+   "id": "q5",
+   "doc": "questioned",
+   "x": 0.0014,
+   "y": -0.0021,
+   "line_no": "[7]12283",
+   "match_index": 1,
+   "lines": [
+    "Met welker relacien, si u verclaert,",
+    "Die ghemeinte zeere vergrimt waert",
+    "Ende weder beruert als wilen eere.",
+    "Soe dat int iaer van Onsen Heere"
+   ]
+  }
+ ]
+}
